@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "CMYLMZ",
+    "version": "1.0",
+    "description": "Replace img tags with your desired picture.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "*.jpg"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
